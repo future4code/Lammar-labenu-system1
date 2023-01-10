@@ -1,3 +1,27 @@
 ### Endpoint de teste
 GET http://localhost:3003/ping
 
+### Endpoint Turmas Ativas
+GET http://localhost:3003/turmas-ativas
+
+
+### Endpoint Criar Turma
+POST http://localhost:3003/criar-turma
+Content-Type: application/json
+
+{
+    "nome":"Master",
+    "modulo": "16"
+}
+
+### Endpoint Criar Estudante
+POST http://localhost:3003/criar-estudante
+Content-Type: application/json
+
+{
+    "data_nasc": "1995-10-16", 
+    "email": "fulano@email.com",
+    "nome":"fulano",
+    "turma_id": "2"
+}
+
