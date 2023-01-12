@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import connection from "../database/connection";
+import connection from "../../database/connection";
 
 
 export const criarEstudante = async (req: Request, res: Response) => {
@@ -15,7 +15,7 @@ export const criarEstudante = async (req: Request, res: Response) => {
         if (!nome || !email || !data_nasc || !turma_id){
             throw new Error("Precisa informar os dados: nome, email,data_nasc e turma_id")
         }
-        await  connection("TURMA").insert({
+        await  connection("ESTUDANTE").insert({
             id,
             nome,
             email,

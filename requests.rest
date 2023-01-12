@@ -5,13 +5,22 @@ GET http://localhost:3003/ping
 GET http://localhost:3003/turmas-ativas
 
 
+### Buscar Estudante
+GET http://localhost:3003/buscar-estudante
+Content-Type: application/json
+
+{
+    "nome": "Leandro"
+}
+
+
 ### Endpoint Criar Turma
 POST http://localhost:3003/criar-turma
 Content-Type: application/json
 
 {
-    "nome":"Master",
-    "modulo": "16"
+    "nome":"Astro",
+    "modulo": "0"
 }
 
 ### Endpoint Criar Estudante
@@ -24,4 +33,15 @@ Content-Type: application/json
     "nome":"fulano",
     "turma_id": "2"
 }
+
+### Endpoint Criar Estudante
+PUT http://localhost:3003/alterar-modulo
+Content-Type: application/json
+
+{
+    "nome": "Astro",
+    "modulo": "2"
+  
+}
+
 

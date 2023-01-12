@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import connection from "../database/connection";
+import connection from "../../database/connection";
 
 
 export const criarTurma = async (req: Request, res: Response) => {
