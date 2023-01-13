@@ -1,23 +1,23 @@
 ### Endpoint de teste:
-GET http://localhost:3003/ping
+GET https://labenu-system1.onrender.com/ping
 
 
 ### *************** ENDPOINTS REFERENTES TURMA ***************
 
 ### Endpoint Buscar Turmas Ativas:
-GET http://localhost:3003/turmas-ativas
+GET https://labenu-system1.onrender.com/turmas-ativas
 
 ### Endpoint Criar Turma:
-POST http://localhost:3003/criar-turma
+POST https://labenu-system1.onrender.com/criar-turma
 Content-Type: application/json
 
-{
-    "nome":"Astro",
-    "modulo": "0"
-}
+    {
+        "nome":"Astro",
+        "modulo": "0"
+    }
 
 ### Endpoint alterar módulo da turma:
-PUT http://localhost:3003/alterar-modulo
+PUT https://labenu-system1.onrender.com/alterar-modulo
 Content-Type: application/json
 
 {
@@ -31,7 +31,7 @@ Content-Type: application/json
 ### *************** ENDPOINTS REFERENTES ESTUDANTE ***************
 
 ### Buscar Estudante por nome:
-GET http://localhost:3003/buscar-estudante
+GET https://labenu-system1.onrender.com/buscar-estudante
 Content-Type: application/json
 
 {
@@ -39,7 +39,7 @@ Content-Type: application/json
 }
 
 ### Endpoint Criar Estudante:
-POST http://localhost:3003/criar-estudante
+POST https://labenu-system1.onrender.com/criar-estudante
 Content-Type: application/json
 
 {
@@ -50,7 +50,7 @@ Content-Type: application/json
 }
 
 ### Endpoint mudar aluno de turma:
-PUT http://localhost:3003/mudar-aluno
+PUT https://labenu-system1.onrender.com/mudar-aluno
 Content-Type: application/json
 
 {
@@ -65,7 +65,7 @@ Content-Type: application/json
 
 
 ### Endpoint Criar Docente:
-POST http://localhost:3003/criar-docente
+POST https://labenu-system1.onrender.com/criar-docente
 Content-Type: application/json
 
 {
@@ -76,16 +76,15 @@ Content-Type: application/json
 }
 
 ### Endpoint todos os docentes:
-GET http://localhost:3003/buscar-docentes
+GET https://labenu-system1.onrender.com/buscar-docentes
 
 ### Endpoint mudar docente de turma:
-PUT http://localhost:3003/mudar-docente
+PUT https://labenu-system1.onrender.com/mudar-docente
 Content-Type: application/json
 
 {
     "nome": "Fayra",
-    "turma_id": "1"
-  
+    "turma_id": "1"  
 }
 
 
