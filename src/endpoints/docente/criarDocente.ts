@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import connection from "../../database/connection";
 
-export const criarEstudante = async (req: Request, res: Response) => {
+export const criarDocente = async (req: Request, res: Response) => {
   let errorCode = 400;
   try {
     const id = Date.now();
@@ -15,14 +15,14 @@ export const criarEstudante = async (req: Request, res: Response) => {
         "Precisa informar os dados: nome, email,data_nasc e turma_id"
       );
     }
-    await connection("ESTUDANTE").insert({
+    await connection("DOCENTE").insert({
       id,
       nome,
       email,
       data_nasc,
       turma_id,
     });
-    res.status(200).send("Estudante criado com sucesso!!");
+    res.status(200).send("Docente criado com sucesso!!");
   } catch (error: any) {
     res.status(errorCode).send({ message: error.message });
   }

@@ -8,4 +8,3 @@ export const ping = async (req: Request, res: Response) => {
     res.status(errorCode).send({ message: error.message });
   }
 };
-

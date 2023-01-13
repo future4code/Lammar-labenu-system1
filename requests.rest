@@ -1,20 +1,13 @@
-### Endpoint de teste
+### Endpoint de teste:
 GET http://localhost:3003/ping
 
-### Endpoint Turmas Ativas
+
+### *************** ENDPOINTS REFERENTES TURMA ***************
+
+### Endpoint Buscar Turmas Ativas:
 GET http://localhost:3003/turmas-ativas
 
-
-### Buscar Estudante
-GET http://localhost:3003/buscar-estudante
-Content-Type: application/json
-
-{
-    "nome": "Leandro"
-}
-
-
-### Endpoint Criar Turma
+### Endpoint Criar Turma:
 POST http://localhost:3003/criar-turma
 Content-Type: application/json
 
@@ -23,7 +16,29 @@ Content-Type: application/json
     "modulo": "0"
 }
 
-### Endpoint Criar Estudante
+### Endpoint alterar módulo da turma:
+PUT http://localhost:3003/alterar-modulo
+Content-Type: application/json
+
+{
+    "nome": "Astro",
+    "modulo": "2"
+  
+}
+
+
+
+### *************** ENDPOINTS REFERENTES ESTUDANTE ***************
+
+### Buscar Estudante por nome:
+GET http://localhost:3003/buscar-estudante
+Content-Type: application/json
+
+{
+    "nome": "Leandro"
+}
+
+### Endpoint Criar Estudante:
 POST http://localhost:3003/criar-estudante
 Content-Type: application/json
 
@@ -34,14 +49,45 @@ Content-Type: application/json
     "turma_id": "2"
 }
 
-### Endpoint Criar Estudante
-PUT http://localhost:3003/alterar-modulo
+### Endpoint mudar aluno de turma:
+PUT http://localhost:3003/mudar-aluno
 Content-Type: application/json
 
 {
-    "nome": "Astro",
-    "modulo": "2"
+    "nome": "Victor",
+    "turma_id": "1"
   
 }
+
+
+
+### *************** ENDPOINTS REFERENTES DOCENTE ***************
+
+
+### Endpoint Criar Docente:
+POST http://localhost:3003/criar-docente
+Content-Type: application/json
+
+{
+    "data_nasc": "1995-07-26", 
+    "email": "savio@email.com",
+    "nome":"Savio",
+    "turma_id": "1"
+}
+
+### Endpoint todos os docentes:
+GET http://localhost:3003/buscar-docentes
+
+### Endpoint mudar docente de turma:
+PUT http://localhost:3003/mudar-docente
+Content-Type: application/json
+
+{
+    "nome": "Fayra",
+    "turma_id": "1"
+  
+}
+
+
 
 
