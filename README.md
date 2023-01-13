@@ -1,4 +1,8 @@
-## LabenuSystem 🎒🏫:
+## LabenuSystem 🎒🏫
+
+## Links:
+### [Documentação](https://documenter.getpostman.com/view/22376244/2s8ZDSc53h)
+### [Deploy](https://labenu-system1.onrender.com)
 
 Sistema básico para uma instituição de ensino.
 
@@ -52,5 +56,4 @@ Sistema básico para uma instituição de ensino.
 
 <p> TypeScript, Node.js e MySQL </p>
 
-### [Documentação](https://documenter.getpostman.com/view/22376244/2s8ZDSc53h)
-### [Deploy](https://labenu-system1.onrender.com)
+
