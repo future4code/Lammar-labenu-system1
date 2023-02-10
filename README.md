@@ -4,7 +4,7 @@
 ### [Documentação](https://documenter.getpostman.com/view/22376244/2s8ZDSc53h)
 ### [Deploy](https://labenu-system1.onrender.com)
 
-Sistema básico para uma instituição de ensino.
+Sistema básico para uma instituição de ensino. Projeto criado visando só o aprendizado de backend para criação de APIs do sistema de uma instituição de ensino.
 
 ## Entidades
 
