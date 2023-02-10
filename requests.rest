@@ -1,0 +1,92 @@
+### Endpoint de teste:
+GET https://labenu-system1.onrender.com/ping
+
+
+### *************** ENDPOINTS REFERENTES TURMA ***************
+
+### Endpoint Buscar Turmas Ativas:
+GET https://labenu-system1.onrender.com/turmas-ativas
+
+### Endpoint Criar Turma:
+POST https://labenu-system1.onrender.com/criar-turma
+Content-Type: application/json
+
+    {
+        "nome":"Astro",
+        "modulo": "0"
+    }
+
+### Endpoint alterar módulo da turma:
+PUT https://labenu-system1.onrender.com/alterar-modulo
+Content-Type: application/json
+
+{
+    "nome": "Astro",
+    "modulo": "2"
+  
+}
+
+
+
+### *************** ENDPOINTS REFERENTES ESTUDANTE ***************
+
+### Buscar Estudante por nome:
+GET https://labenu-system1.onrender.com/buscar-estudante
+Content-Type: application/json
+
+{
+    "nome": "Leandro"
+}
+
+### Endpoint Criar Estudante:
+POST https://labenu-system1.onrender.com/criar-estudante
+Content-Type: application/json
+
+{
+    "data_nasc": "1995-10-16", 
+    "email": "fulano@email.com",
+    "nome":"fulano",
+    "turma_id": "2"
+}
+
+### Endpoint mudar aluno de turma:
+PUT https://labenu-system1.onrender.com/mudar-aluno
+Content-Type: application/json
+
+{
+    "nome": "Victor",
+    "turma_id": "1"
+  
+}
+
+
+
+### *************** ENDPOINTS REFERENTES DOCENTE ***************
+
+
+### Endpoint Criar Docente:
+POST https://labenu-system1.onrender.com/criar-docente
+Content-Type: application/json
+
+{
+    "data_nasc": "1995-07-26", 
+    "email": "savio@email.com",
+    "nome":"Savio",
+    "turma_id": "1"
+}
+
+### Endpoint todos os docentes:
+GET https://labenu-system1.onrender.com/buscar-docentes
+
+### Endpoint mudar docente de turma:
+PUT https://labenu-system1.onrender.com/mudar-docente
+Content-Type: application/json
+
+{
+    "nome": "Fayra",
+    "turma_id": "1"  
+}
+
+
+
+
